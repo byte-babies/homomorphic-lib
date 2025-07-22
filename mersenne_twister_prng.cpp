@@ -1,15 +1,17 @@
 #include <iostream>
-#include <random>
 using namespace std;
+
+#define STATE_VECTOR_LENGTH 624
+#define WORD_LENGTH 624
 
 int generate_prime(){
 
 }
 
 int generate_prng(){
-  // generate a random number with mersenne
-  mt19937 mt{};
-  return mt();
+  // we generate integers from 0 to 2^w - 1
+  int degrees_of_recurrence = 20;
+
 }
 
 bool miller_rabin_test(){
